@@ -21,8 +21,10 @@
         <br />
         <br />
         <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesion" OnClick="btnLogin_Click" />
+            <br />
         <br />
-        <asp:Label ID="lblUserNotFound" runat="server"></asp:Label>
+        <asp:Label ID="lblUserNotFound" runat="server" ForeColor="Red"></asp:Label>
+            <br />
         <br />
         </div>
     </asp:Panel>
