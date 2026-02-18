@@ -3,12 +3,12 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %>.</h2>
-        <h3>Your contact page.</h3>
+        <h3>Facultad de Ingeniera UTEC</h3>
         <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
+            3a Calle Poniente, Blvd Constitucion #301<br />
+            Col. Escalon, San Salvador<br />
             <abbr title="Phone">P:</abbr>
-            425.555.0100
+            2275.8888
         </address>
 
         <address>
