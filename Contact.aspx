@@ -5,10 +5,10 @@
         <h2 id="title"><%: Title %>.</h2>
         <h3>Your contact page.</h3>
         <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
+            Facultad de Ingenieria UTEC<br />
+            3a Calle Poniente, BLvd Constituvion # 301, Col. Escalon<br />
             <abbr title="Phone">P:</abbr>
-            425.555.0100
+            2275.8888
         </address>
 
         <address>
