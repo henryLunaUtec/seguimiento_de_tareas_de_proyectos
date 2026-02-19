@@ -10,7 +10,33 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblTest" runat="server" Text="Estoy en la pagina task"></asp:Label>
+            <h2>Registro de Nueva Tarea</h2>
+<hr />
+<div>
+    <p>Nombre de la Tarea:</p>
+    <asp:TextBox ID="txtTarea" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="rfvTarea" runat="server" 
+        ControlToValidate="txtTarea" 
+        ErrorMessage="El nombre es obligatorio" 
+        ForeColor="Red" />
+</div>
+<br />
+<div>
+    <p>Prioridad:</p>
+    <asp:DropDownList ID="ddlPrioridad" runat="server">
+        <asp:ListItem Text="-- Seleccione --" Value="" />
+        <asp:ListItem Text="Alta" Value="A" />
+        <asp:ListItem Text="Media" Value="M" />
+        <asp:ListItem Text="Baja" Value="B" />
+    </asp:DropDownList>
+    <asp:RequiredFieldValidator ID="rfvPrioridad" runat="server" 
+        ControlToValidate="ddlPrioridad" InitialValue="" 
+        ErrorMessage="Seleccione una prioridad" 
+        ForeColor="Red" />
+</div>
+<br />
+<asp:Button ID="btnGuardar" runat="server" Text="Guardar Tarea" />
+
         </div>
     </form>
 </body>
