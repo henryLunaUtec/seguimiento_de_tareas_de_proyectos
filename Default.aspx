@@ -1,44 +1,33 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="seguimiento_de_tareas_de_proyectos._Default" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
-
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+﻿<%@ Page Title="Home Page" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="seguimiento_de_tareas_de_proyectos._Default" %>
+<form id="form1" runat="server">
+    <asp:Panel ID="pnlContainer" runat="server" BackColor="#66CCFF" BorderColor="#3366FF" BorderStyle="Solid" Height="405px" Width="399px" style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+        <br />
+        <asp:Label ID="lblLogin" runat="server" Text="Sistema seguimiento de tareas y proyectos" Height="35px"></asp:Label>
+        <div style="padding: 1rem; border-radius: 24px; border:solid 1px blue;">
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="lblNameUser" runat="server" Text="Usuario"></asp:Label>
+        <br />
+        <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
+        <br />
+        <asp:RequiredFieldValidator ID="rfvUser" runat="server" ControlToValidate="txtUser" ErrorMessage="Nombre de usuario es requerido" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+        <br />
+        <asp:Label ID="lblPassword" runat="server" Text="Contraseña"></asp:Label>
+        <br />
+        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+        <br />
+        <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="Contraseña es requerida" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+        <br />
+        <br />
+        <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesion" OnClick="btnLogin_Click" />
+            <br />
+        <br />
+        <asp:Label ID="lblUserNotFound" runat="server" ForeColor="Red"></asp:Label>
+            <br />
+        <br />
         </div>
-    </main>
+    </asp:Panel>
+</form>
 
-</asp:Content>
+
