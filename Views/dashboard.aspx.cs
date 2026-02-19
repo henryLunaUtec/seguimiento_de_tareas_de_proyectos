@@ -16,7 +16,7 @@ namespace seguimiento_de_tareas_de_proyectos.Views
                 if (Session["usuario"] != null)
                 {
                     //evitamos la perdida de la sesion en caso haya
-                    lblSession.Text = "Hola "+Session["usuario"].ToString() +"Bienvenido";
+                    lblSession.Text = "Hola "+Session["usuario"].ToString() +" Bienvenido";
                 }
 
             }
@@ -31,5 +31,11 @@ namespace seguimiento_de_tareas_de_proyectos.Views
         {
             Response.Redirect("~/Views/users.aspx");
         }
+
+        protected void btnGoToContact_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Contact.aspx");
+        }
+
     }
 }

@@ -20,6 +20,10 @@
             <br />
             <br />
             <asp:Button ID="btnGoToUsers" runat="server" OnClick="btnGoToUsers_Click" Text="Ir a usuarios" />
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="btnGoToContact" runat="server"  OnClick="btnGoToContact_Click" style="height: 26px" Text="Contactanos" />
         </asp:Panel>
     </form>
 </body>
