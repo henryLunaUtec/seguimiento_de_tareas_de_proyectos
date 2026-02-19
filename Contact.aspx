@@ -1,19 +1,26 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="seguimiento_de_tareas_de_proyectos.Contact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="seguimiento_de_tareas_de_proyectos.Contact" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
-        <h3>Your contact page.</h3>
-        <address>
-            Facultad de Ingenieria UTEC<br />
-            3a Calle Poniente, BLvd Constituvion # 301, Col. Escalon<br />
-            <abbr title="Phone">P:</abbr>
-            2275.8888
-        </address>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Contacto - Grupo 06</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <main>
+            <h2>Contacto.</h2>
+            <h3>Página de contacto del equipo.</h3>
+            <address>
+                Facultad de Ingeniería UTEC<br />
+                3a Calle Poniente, Blvd Constitución #301, Col. Escalón<br />
+                <abbr title="Phone">P:</abbr> 2275.8888
+            </address>
 
-        <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-        </address>
-    </main>
-</asp:Content>
+            <address>
+                <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+                <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+            </address>
+        </main>
+    </form>
+</body>
+</html>
