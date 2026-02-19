@@ -42,8 +42,8 @@ namespace seguimiento_de_tareas_de_proyectos
 
                 if (isValidUser && isValidPass)
                 {
+                    Session["usuario"] = "Admin";
                     Response.Redirect("~/Views/dashboard.aspx");
-                    //Session["usuario"] = "Admin";
                 }
                 else
                 {
