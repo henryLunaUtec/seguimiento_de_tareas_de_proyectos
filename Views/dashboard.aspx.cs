@@ -11,6 +11,15 @@ namespace seguimiento_de_tareas_de_proyectos.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                if (Session["usuario"] != null)
+                {
+                    //evitamos la perdida de la sesion en caso haya
+                    lblSession.Text = "Hola "+Session["usuario"].ToString() +"Bienvenido";
+                }
+
+            }
         }
 
         protected void btnGoToTask_Click(object sender, EventArgs e)
