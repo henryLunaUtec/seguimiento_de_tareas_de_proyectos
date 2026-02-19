@@ -12,8 +12,8 @@
         </address>
 
         <address>
-            <strong>Support:</strong>   <a href="mailto:Soporte@utec.com">Soporte@utec.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Proyecto@utec.com">Proyecto@utec.com</a>
+            <strong>Soporte Tecnico:</strong>   <a href="mailto:Soporte@utec.com">Soporte@utec.com</a><br />
+            <strong>Proyecto:</strong> <a href="mailto:Proyecto@utec.com">Proyecto@utec.com</a>
         </address>
     </main>
 </asp:Content>
